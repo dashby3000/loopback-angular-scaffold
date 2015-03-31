@@ -1,0 +1,12 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory",
+    "defaultForType": "db"
+  },
+  "mongodb": {
+    "name": "mongodb",
+    "connector": "loopback-connector-mongodb",
+    "allowExtendedOperators": true
+  }
+}

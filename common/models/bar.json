@@ -1,0 +1,14 @@
+{
+  "name": "Bar",
+  "base": "Model",
+  "idInjection": true,
+  "properties": {
+    "name": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

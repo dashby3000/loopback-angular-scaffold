@@ -1,0 +1,38 @@
+{
+  "initial:before": {
+    "loopback#favicon": {
+      "params": "$!./explorer/images/favicon.ico"
+    }
+  },
+  "initial": {
+    "compression": {},
+    "connect-livereload": {},
+    "./middleware/enforceSSL": {
+      "enabled": false
+    },
+    "./middleware/tracker": {
+      "enabled": true
+    }
+  },
+  "session": {
+  },
+  "auth": {
+  },
+  "parse": {
+  },
+  "routes": {
+    "loopback#status": {
+      "paths": "/ping"
+    }
+  },
+  "files": {
+    "loopback#static": {}
+  },
+  "final": {
+    "./middleware/fourOhFourError": {}
+  },
+  "final:after": {
+    "./middleware/errorHandler": {
+    }
+  }
+}
